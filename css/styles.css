@@ -1,0 +1,519 @@
+* {
+  margin: 0;
+  padding:0;
+}
+
+body{
+  background-color: #A8DCD1;
+  min-height: 100%;
+  width: 100%;
+}
+
+html{
+  position: relative;
+  min-height: 100%;
+  width: 100%;
+}
+/**NAV BAR**/
+#header-nav {
+	background-color: #65DEF1;
+	border-radius: 0;
+	border: 0;
+}
+
+.navbar-mobile {
+  display: none;
+}
+.container {
+  width: 100%;
+}
+.navbar-header{
+}
+
+#logo-img {
+	border: 3px solid #65DEF1;
+	border-radius: 50%;
+  	background: url('../images/avatar-resized.png') no-repeat center center;
+  	width: 115px;
+  	height: 115px;
+  	margin: 10px 15px 10px 120px;
+}
+
+.about-me, .education, .projects, .work-experience {
+	margin-top: 40px;
+}
+
+#nav-list{
+  margin-right: 20px;
+}
+.education-text, .projects-text, .work-experience-text, .about-me-text {
+	display: none;
+	font-size: 10px;
+	text-align: center;
+	margin-top: 2px;
+	font-weight: bold;
+}
+
+a:hover .education-text {
+	display: block;
+}
+
+a:hover .projects-text {
+	display: block;
+}
+
+a:hover .work-experience-text {
+	display: block;
+}
+
+a:hover .about-me-text {
+	display: block;
+}
+
+/**HOVER PUSH**/
+
+@-webkit-keyframes hvr-push {
+  50% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes hvr-push {
+  50% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.hvr-push {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+}
+.hvr-push:hover, .hvr-push:focus, .hvr-push:active {
+  -webkit-animation-name: hvr-push;
+  animation-name: hvr-push;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+/**JUMBOTRON**/
+
+.jumbotron-styles {
+	background-color: #A8DCD1;
+	margin-bottom: 0px;
+  margin-top: -20px;
+
+}
+
+.jumbotron-styles p {
+	font: 400 40px/1.6 'Pontano Sans', Verdana, Helvetica, sans-serif;
+	font-weight: bold;
+	text-align: center;
+}
+
+.jumbotron-styles h1 {
+	font: 400 95px/1.6 'Pacifico', Georgia, serif;
+	text-align: center;
+}
+
+.jumbotron h2 {	
+	text-align: center;	
+}
+
+.jumbotron h2 img{
+}
+
+.jumbotron h2 p{
+	font: 400 10px 'Bevan', Georgia, serif;
+	color: black;
+	font-weight: normal;
+	margin-top: 15px;
+}
+
+.bubble {
+position: relative;
+width: 75px;
+height: 25px;
+padding: 4px;
+background: #6dc5b2;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+border: black solid 2px;
+}
+
+.bubble:after 
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 0 10px 5px;
+border-color: #6dc5b2 transparent;
+display: block;
+width: 0;
+z-index: 1;
+margin-left: -10px;
+top: -5px;
+left: 50%;
+}
+
+.bubble:before 
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 0 11px 6px;
+border-color: black transparent;
+display: block;
+width: 0;
+z-index: 0;
+margin-left: -11px;
+top: -8px;
+left: 50%;
+}
+
+/* Buzz */
+@-webkit-keyframes hvr-buzz {
+  50% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+
+  100% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+}
+
+@keyframes hvr-buzz {
+  50% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+
+  100% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+}
+
+.hvr-buzz {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.hvr-buzz:hover, .hvr-buzz:focus, .hvr-buzz:active {
+  -webkit-animation-name: hvr-buzz;
+  animation-name: hvr-buzz;
+  -webkit-animation-duration: 0.15s;
+  animation-duration: 0.15s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+/**END OF JUMBOTRON**/
+
+
+/**FOOTER**/
+.footer {
+  position: absolute;
+  width: 100%;
+	background-color: #DCE2C8;
+  left: 0;
+  bottom: 0;
+}	
+
+.footer p {
+	text-align: center;
+  margin-top: 5px;
+}
+
+/**ABOUT ME PAGE**/
+
+.jumbotron-styles .container .profile-pic h1{
+  
+  margin: 0px 0px;
+  padding: 0px;
+  border: 1px solid red;
+}
+
+.jumbotron-styles .container .profile-pic img{
+  border-radius: 15px;
+  border: 1px solid red;
+}
+
+.jumbotron-styles .container .profile-pic .bubble-about-me{
+  border: 1px solid red;
+}
+
+.bubble-about-me 
+{
+position: relative;
+width: 250px;
+height: 100px;
+padding: 0px;
+background: #FFFFFF;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+border: #7F7F7F solid 2px;
+}
+
+.bubble-about-me:after 
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 10px 5px 10px 0;
+border-color: transparent #FFFFFF;
+display: block;
+width: 0;
+z-index: 1;
+margin-top: -10px;
+left: -5px;
+top: 50%;
+}
+
+.bubble-about-me:before 
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 11px 6px 11px 0;
+border-color: transparent #7F7F7F;
+display: block;
+width: 0;
+z-index: 0;
+margin-top: -11px;
+left: -8px;
+top: 50%;
+}
+
+/**MEDIA QUERIES - MOBILE RESPONSIVE WEBPAGE**/
+
+@media (min-width: 320px) and (max-width: 767px) {
+/***NAV BAR**/
+.navbar-header{
+	display: inline-block;
+}
+/**NAV MOBILE**/
+.navbar-mobile{
+  display: block;
+}
+.navbar-mobile a {
+  display: inline-block;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.navbar-mobile a span {
+  font-size: 10px;
+  font-weight: bold;
+  color: black;
+}
+.navbar-mobile a:hover {
+  text-decoration: none;
+}
+
+/**END OF NAVBAR-MOBILE**/
+.navbar-collapse{
+  display:none;
+  float: none;
+}
+.container {
+	text-align: center;
+}
+#logo-img {
+  	margin: 0px;
+}
+.navbarbutton {
+	display: block;
+}
+/**JUMBOTRON**/
+.jumbotron-styles p {
+  font: 400 25px 'Pontano Sans', Verdana, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+.jumbotron-styles h1 {
+  font: 400 65px 'Pacifico', Georgia, serif;
+  text-align: center;
+}
+
+}
+
+/**END OF MEDIA QUERIES - MOBILE RESPONSIVE**/
+
+/**ABOUT ME PAGE**/
+.jumbotron-styles .container .about-page-about-me {
+  margin-top: -30px;
+  font: 400 40px 'Pacifico', Georgia, serif;;
+  font-weight: 900;
+}
+.jumbotron-styles .container .about-page-about-me img{
+  margin-bottom: 25px;
+}
+.jumbotron-styles .container h1 {
+  margin-top: -20px;
+}
+
+.jumbotron-styles .container .profile-pic-resized {
+}
+.jumbotron-styles .container .profile-pic-resized p img{
+    display: block;
+    border-radius: 20px;
+    margin: 0 auto; /*<-------------------------------------------TAKE NOTE HOW TO CENTER IMAGES--------*/
+}
+
+.jumbotron-styles .container .about-page-quote-div .about-page-quote {
+  margin-bottom: 20px;
+  font: 400 20px 'Gudea', Verdana, Helvetica, sans-serif;
+  font-weight: normal;
+  border: 3px solid black;
+  padding: 10px;
+  border-radius: 20px;
+  width: 60%;
+  margin: 20px auto;
+}
+.jumbotron-styles .container .about-page-quote-div .about-page-quote span{
+  font-weight:bolder;
+}
+
+/***RESPONSIVE FOR ABOUT-ME PAGE***/
+
+@media (min-width: 767px) and (max-width: 992px) {
+.jumbotron-styles .container .about-page-quote-div .about-page-quote {
+  width:60%;
+}
+
+}
+@media (min-width: 320px) and (max-width: 767px) {
+
+.jumbotron-styles .container .about-page-about-me {
+  margin-top: -20px;
+  font: 400 30px 'Pacifico', Georgia, serif;
+  font-weight: 900;
+}
+.jumbotron-styles .container .about-page-quote-div .about-page-quote {
+  margin-bottom: 30px;
+  font: 400 15px 'Gudea', Verdana, Helvetica, sans-serif;
+  font-weight: normal;
+  width: 70%;
+}
+.jumbotron-styles .container .profile-pic-resized img{
+  width:90px;
+}
+
+}
+/**END OF ABOUT ME PAGE**/
+
+/**START OF EDUCATION PAGE**/
+
+.jumbotron-styles .container .under-construction-education h1{  
+  width: 80% ;
+  display:block;
+  margin: 0 auto;
+  font: 400 50px Arial Black;
+  font-weight: bolder;
+}
+.jumbotron-styles .container .under-construction-education h1 img{
+  margin-bottom: 10px;
+}
+
+.jumbotron-styles .container .check-out h1 {
+  width:80%;
+  font: 30px "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+  display:block;
+  margin: 20px auto;
+}
+
+.jumbotron-styles .container .check-out h1 img{
+  margin-bottom: 10px;
+}
+
+.jumbotron-styles .container .check-out h1 a{
+  text-decoration:none;
+  color: black;
+}
+
+.jumbotron-styles .container .check-out h1 a:hover{
+  text-decoration: none;
+}
+.jumbotron-styles .container .check-out h1 a span{
+  padding: 2px;
+  margin-left: -2px;
+  background: #1193d2;
+  border-radius: 10px;
+}
+.jumbotron-styles .container .check-out h1 a span .in{
+  color: white;
+}
+
+@media (min-width: 767px) and (max-width: 992px) {
+.jumbotron-styles .container .under-construction-education h1{  
+  width: 80% ;
+  display:block;
+  margin: 0 auto;
+  font: 400 30px Arial Black;
+  font-weight: bolder;
+}
+.jumbotron-styles .container .check-out h1 {
+  width:80%;
+  font: 25px "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+  display:block;
+  margin: 20px auto;
+}
+}
+@media (min-width: 320px) and (max-width: 767px) {
+.jumbotron-styles .container .under-construction-education h1{  
+  width: 80% ;
+  display:block;
+  margin: 0 auto;
+  font: 400 15px Arial Black;
+  font-weight: bolder;
+}
+.jumbotron-styles .container .under-construction-education h1 img{
+  margin-bottom: 10px;
+  width: 15px;
+}
+.jumbotron-styles .container .check-out h1 {
+  width:80%;
+  font: 15px "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+  display:block;
+  margin: 20px auto;
+}
+.jumbotron-styles .container .check-out h1 img{
+  margin-bottom: 10px;
+  width:20px;
+}
+
+}

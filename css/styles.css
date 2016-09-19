@@ -365,7 +365,7 @@ top: 50%;
 }
 
 .jumbotron-styles h1 {
-  font: 400 65px 'Pacifico', Georgia, serif;
+  font: 400 65px 'Baloo Bhaina', cursive;
   text-align: center;
 }
 
@@ -376,7 +376,7 @@ top: 50%;
 /**ABOUT ME PAGE**/
 .jumbotron-styles .container .about-page-about-me {
   margin-top: -30px;
-  font: 400 40px 'Pacifico', Georgia, serif;;
+  font: 400 40px 'Baloo Bhaina', cursive;
   font-weight: 900;
 }
 .jumbotron-styles .container .about-page-about-me img{
@@ -420,7 +420,7 @@ top: 50%;
 
 .jumbotron-styles .container .about-page-about-me {
   margin-top: -20px;
-  font: 400 30px 'Pacifico', Georgia, serif;
+  font: 400 30px 'Baloo Bhaina', cursive;
   font-weight: 900;
 }
 .jumbotron-styles .container .about-page-quote-div .about-page-quote {
